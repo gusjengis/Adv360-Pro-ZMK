@@ -1,73 +1,53 @@
-# ADV360-PRO-ZMK
+# ADV360 Pro ZMK All-in-One Qwerty, Colemak, Colemak-DH, Dvorak, Programmer Dvorak, Workman, Workman-P Layout
 
-## Modifying the keymap
+It's a single keyboard layout for the Kinesis Advantage 360 (Adv360) that lets you choose between a bunch of different keyboard layouts.
 
-There is a GUI for editing the keymap. It is available at https://kinesiscorporation.github.io/Adv360-Pro-GUI
+- Fork it to make your own: [Instructions](https://github.com/KinesisCorporation/Adv360-Pro-ZMK
+) (fork this repository instead, though)
+- Kinesis's Keymap GUI for your fork: [See here](https://kinesiscorporation.github.io/Adv360-Pro-GUI)
+- Just Give me the Firmware: Look at the releases, to the right. Look at the support page for full instructions. Summary: mount left module with mod+(1), drag left into the directory; then, mount right module with mod+(3), drag right into directory.
+- Kinesis 360 Pro support page: [see here](https://kinesis-ergo.com/support/kb360pro/)
 
-## Building the Firmware with GitHub Actions
+## Instructions
 
-### Setup
+After you follow the flashing instructions (see the links above), tap the (1) macro key to cycle through the available layouts:
 
-1. Fork this repo.
-2. Enable GitHub Actions on your fork.
+1. qwerty
+2. [colemak](https://colemak.com)
+3. [colemak-dh](https://colemakmods.github.io/mod-dh/)
+4. dvorak
+5. [programmer dvorak](https://www.kaufmann.no/roland/dvorak/) (I use this)
+6. [workman](https://workmanlayout.org)
+7. [workman-p](https://workmanlayout.org)
 
-### Build firmware
+And some notes:
 
-1. Push a commit to trigger the build.
-2. Download the artifact.
+- **Important**: When multiple layers are activated, the one with the highest number takes priority. They are not stacked. Mod and Fn must be kept at the end of the list. You can create new layers with proper ordering by copying a list item from keymap.json, saving it, then reloading the web configurator.
+- You can also tap Mod+LCTRL or Mod+Delete to put LCTRL on Delete, LSHIFT on LCTRL, and DEL on RCTRL. I use that myself, but didn't set it by default to keep the layout vanilla.
+- I don't use Colemak or Workman but threw them in there to be helpful. I hope it works right.
+- Change unused keys on the base qwerty layer (e.g. the thumb clusters) to apply those changes to all layouts.
+- Programmer Dvorak (dvp) based on the way the layout acts on my Linux computer, with the number row keys corrected so that 1 is on the left index finger. Programmer Dvorak changes the shift-behavior of the number row, which I implemented with [ZMK mod-morphs](https://zmk.dev/docs/behaviors/mod-morph) -- `&dvp_` labels in config/dvp_morphs.dtsi. Since the Kinesis web configurator regenerates the keymap every time, I shunted those extra rules into the macros.dtsi file inside of .github/build.yml.
+- I estimated a good symbol layout for dvorak, and kept the bracket keys unchanged from qwerty since they're in a non-standard position already.
+- I didn't really verify workman-p or colemak-dh very much.
 
-## Building the Firmware in a local container
+## Screenshots
+Qwerty
+![Screenshot_2023-07-24_23-56-31](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/fa9b7276-36e9-459d-ba7d-eedc9cb5a10e)
 
-### Setup
+Colemak
+![Screenshot_2023-07-24_23-52-10](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/013a2325-04d3-4c9c-b66d-767eedd28308)
 
-#### Software
+Colemak-DH
+![Screenshot_2023-07-29_16-25-14](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/b3f2a185-70ae-4ef9-8545-8515f6783472)
 
-* Either Podman or Docker is required, Podman is preferred if both are present.
-* Make is also required
+Dvorak
+![Screenshot_2023-07-24_23-48-22](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/c6e0d77f-8694-464f-8fbe-1edac22e5911)
 
-#### Windows specific
+Programmer Dvorak (pink keys are mod-morph combos for e.g. left-parenthesis with 1 on shift)
+![Screenshot_2023-07-24_23-50-48](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/22d6c1fd-43b2-4e89-8531-a25eb69374bb)
 
-* If compiling on Windows use WSL2 and Docker [Docker Setup Guide](https://docs.docker.com/desktop/windows/wsl/).
-* Install make using `sudo apt-get install make`.
-* The repository can be cloned directly into the WSL2 instance or accessed through the C: mount point WSL provides by default (`/mnt/c/path-to-repo`).
+Workman
+![Screenshot_2023-07-29_16-25-31](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/07c0de62-8c28-4a1f-ace1-e8967154de47)
 
-### Build firmware
-
-1. Execute `make`.
-2. Check the `firmware` directory for the latest firmware build.
-
-### Cleanup
-
-The built docker container and compiled firmware files can be deleted with `make clean`.
-
-## Flashing firmware
-
-Follow the programming instruction on page 8 of the [Quick Start Guide](https://kinesis-ergo.com/wp-content/uploads/Advantage360-Professional-QSG-v8-25-22.pdf) to flash the firmware.
-
-### briefly
-
-1. Extract the firmwares from the downloaded archive.
-1. Connect the left side keyboard to USB.
-1. Press Mod+macro1 to put the left side into bootloader mode; it should attach to your computer as a USB drive.
-1. Copy `left.uf2` to the USB drive and it will disconnect.
-1. Power off both keyboards (by unplugging them and making sure the switches are off).
-1. Turn on the left side keyboard with the switch.
-1. Connect the right side keyboard to USB to power it on.
-1. Press Mod+macro3 to put the right side into bootloader mode to attach it as a USB drive.
-1. Copy `right.uf2` to the mounted drive.
-1. Unplug the right side keyboard and turn it back on.
-1. Enjoy!
-
-> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14. 
-
-### Upgrading from V2 to V3
-
-If you are upgrading from V2 to V3, and if the flashing didn't work as expected (i.e. if you are unable to pair the keyboard via Bluetooth), then consider [resetting](https://kinesis-ergo.com/support/kb360pro/#firmware-updates) both halves of the keyboard to its native state. Make sure to use the `settings-reset.uf2` file from 
-the V3 branch of this repository. After doing this, proceed with the flashing instructions above.
-
-## Other support
-
-Further support resources can be found on Kinesis.com:
-
-* https://kinesis-ergo.com/support/kb360pro/#firmware-updates
-* https://kinesis-ergo.com/support/kb360pro/#manuals
+Workman-P
+![Screenshot_2023-07-29_16-25-48](https://github.com/sabslikesobs/Adv360-Pro-ZMK/assets/57574500/651da268-70c6-4582-a789-25d08ee5554d)
