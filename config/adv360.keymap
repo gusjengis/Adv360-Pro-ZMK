@@ -8,6 +8,7 @@
     behaviors {
         #include "macros.dtsi"
       #include "version.dtsi"
+      #ifndef VERSION_MACRO
 
         macro_ver: macro_ver {
             compatible = "zmk,behavior-macro";
@@ -15,6 +16,8 @@
             #binding-cells = <0>;
             bindings = <&kp RET>;
         };
+
+        #endif
 
         dollar_tilde: dollar_tilde {
             compatible = "zmk,behavior-mod-morph";
