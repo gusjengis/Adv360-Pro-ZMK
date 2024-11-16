@@ -41,7 +41,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EXCLAIMATION";
             #binding-cells = <0>;
-            bindings = <&kp EXCLAMATION>;
+            bindings = <&kp EXCLAMATION>, <&kp EXCL>;
+
             mods = <(MOD_LGUI|MOD_RGUI|MOD_RSFT|MOD_LSFT)>;
         };
 
@@ -49,7 +50,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_BRACKET";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACKET>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -57,7 +59,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_BRACE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACE>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -65,7 +68,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_PARENTHESIS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_PARENTHESIS>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -73,7 +77,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EQUAL";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>;
+            bindings = <&kp EQUAL>, <&kp EQUAL>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -81,7 +86,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PLUS";
             #binding-cells = <0>;
-            bindings = <&kp PLUS>;
+            bindings = <&kp PLUS>, <&kp PLUS>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -89,7 +95,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_PARENTHESIS";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -97,7 +104,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_BRACE";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACE>, <&kp N4>;
+            bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACE>;
 
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
@@ -106,7 +113,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_BRACKET";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACKET>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -114,7 +122,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ASTERISK";
             #binding-cells = <0>;
-            bindings = <&kp ASTERISK>;
+            bindings = <&kp ASTERISK>, <&kp ASTERISK>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
@@ -135,7 +144,6 @@
 
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
-
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
