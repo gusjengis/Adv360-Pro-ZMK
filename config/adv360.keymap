@@ -28,7 +28,7 @@
 
         ampersand_percent: ampersand_percent {
             compatible = "zmk,behavior-mod-morph";
-            label = "ampersand_percent";
+            label = "AMPERSAND_PERCENT";
             #binding-cells = <0>;
             bindings = <&kp AMPERSAND>, <&kp PERCENT>;
 
