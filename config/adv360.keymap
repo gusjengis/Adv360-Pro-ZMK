@@ -26,9 +26,9 @@
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
 
-        ampersand_percent: ampersand_percent {
+        amper_perc: amper_perc {
             compatible = "zmk,behavior-mod-morph";
-            label = "AMPERSAND_PERCENT";
+            label = "AMPER_PERC";
             #binding-cells = <0>;
             bindings = <&kp AMPERSAND>, <&kp PERCENT>;
 
@@ -155,11 +155,11 @@
 
         programmers_dvorak {
             bindings = <
-&ampersand_percent  &exclaimation  &left_bracket  &left_brace  &left_parenthesis  &equal  &kp CAPSLOCK                                                 &mo 4          &plus  &right_parenthesis  &right_brace  &right_bracket  &asterisk  &hash_grave
-&kp TAB             &kp SEMICOLON  &kp COMMA      &kp PERIOD   &kp P              &kp Y   &none                                                        &none          &kp F  &kp G               &kp C         &kp R           &kp L      &kp BSLH
-&kp ESC             &kp A          &kp O          &kp E        &kp U              &kp I   &none         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none          &kp D  &kp H               &kp T         &kp N           &kp S      &kp MINUS
-&kp LSHFT           &kp SQT        &kp Q          &kp J        &kp K              &kp X                            &kp HOME      &kp PG_UP                            &kp B  &kp M               &kp W         &kp V           &kp Z      &kp RSHFT
-&mo 3               &dollar_tilde  &tog 2         &kp LEFT     &kp RIGHT                  &kp SPACE     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE         &kp UP              &kp DOWN      &kp SLASH       &at_caret  &mo 3
+&amper_perc  &exclaimation  &left_bracket  &left_brace  &left_parenthesis  &equal  &kp CAPSLOCK                                                 &mo 4          &plus  &right_parenthesis  &right_brace  &right_bracket  &asterisk  &hash_grave
+&kp TAB      &kp SEMICOLON  &kp COMMA      &kp PERIOD   &kp P              &kp Y   &none                                                        &none          &kp F  &kp G               &kp C         &kp R           &kp L      &kp BSLH
+&kp ESC      &kp A          &kp O          &kp E        &kp U              &kp I   &none         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none          &kp D  &kp H               &kp T         &kp N           &kp S      &kp MINUS
+&kp LSHFT    &kp SQT        &kp Q          &kp J        &kp K              &kp X                            &kp HOME      &kp PG_UP                            &kp B  &kp M               &kp W         &kp V           &kp Z      &kp RSHFT
+&mo 3        &dollar_tilde  &tog 2         &kp LEFT     &kp RIGHT                  &kp SPACE     &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE         &kp UP              &kp DOWN      &kp SLASH       &at_caret  &mo 3
             >;
         };
 
