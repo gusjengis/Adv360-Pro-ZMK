@@ -168,7 +168,7 @@
 &kp TAB         &kp SEMI       &kp COMMA      &kp PERIOD   &kp P              &kp Y   &none                                                             &none          &kp F  &kp G               &kp C         &kp R           &kp L      &kp DELETE
 &kp ESC         &kp A          &kp O          &kp E        &kp U              &kp I   &none      &kp LCTRL  &kp LALT      &kp LGUI   &kp RIGHT_CONTROL  &none          &kp D  &kp H               &kp T         &kp N           &kp S      &kp MINUS
 &kp LEFT_SHIFT  &kp SQT        &kp Q          &kp J        &kp K              &kp X                         &kp HOME      &kp PG_UP                                    &kp B  &kp M               &kp W         &kp V           &kp Z      &kp RIGHT_SHIFT
-&mo 5           &dollar_tilde  &mo 4          &kp LEFT     &kp RIGHT                  &kp SPACE  &mo 1      &kp END       &kp PG_DN  &kp ENTER          &kp BACKSPACE         &kp UP              &kp DOWN      &kp UNDER       &at_caret  &mo 5
+&mo 5           &dollar_tilde  &mo 4          &kp LEFT     &kp RIGHT                  &kp SPACE  &kp ENTER  &kp END       &kp PG_DN  &mo 1              &kp BACKSPACE         &kp UP              &kp DOWN      &kp UNDER       &at_caret  &mo 5
             >;
         };
 
