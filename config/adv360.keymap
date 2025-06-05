@@ -174,20 +174,20 @@
         programmers_dvorak {
             bindings = <
 &none           &none  &none  &none           &none           &none  &none                                                    &mo 4          &none  &none           &none           &none  &none  &none
-&none           &none  &kp Z  &kp L           &kp P           &kp Y  &none                                                    &none          &kp F  &kp G           &kp C           &kp R  &none  &none
+&none           &none  &none  &kp L           &kp P           &kp Y  &none                                                    &none          &kp F  &kp G           &kp C           &kp R  &none  &none
 &kp ESC         &kp A  &kp O  &hm LEFT_ALT E  &hm LEFT_GUI U  &kp I  &none      &none        &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_ALT T  &kp N  &kp S  &kp TAB
-&kp LEFT_SHIFT  &none  &kp Q  &kp J           &kp K           &kp X                          &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W           &kp V  &none  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &none  &kp Q  &kp J           &kp K           &kp X                          &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W           &kp V  &kp Z  &kp RIGHT_SHIFT
 &none           &none  &mo 3  &kp LEFT        &kp RIGHT              &kp SPACE  &lt 2 ENTER  &none          &none      &mo 1  &kp BACKSPACE         &kp UP_ARROW    &kp DOWN_ARROW  &mo 4  &none  &none
             >;
         };
 
         symbol {
             bindings = <
-&trans  &trans           &trans         &trans            &trans             &trans          &trans                                      &trans  &trans        &trans                &trans                 &trans         &trans             &trans
-&trans  &trans           &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &pipe_backslash &trans                                      &trans  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &trans             &trans
-&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND   &trans  &trans  &trans      &trans  &trans  &trans  &kp POUND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
-&trans  &kp GRAVE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                     &trans      &trans                  &at_caret     &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE   &trans
-&trans  &trans           &trans         &trans            &trans                             &trans  &trans  &trans      &trans  &trans  &trans                &trans                &trans                 &trans         &trans             &trans
+&trans  &trans           &trans         &trans            &trans             &trans           &trans                                      &trans  &trans        &trans                &trans                 &trans         &trans             &trans
+&trans  &trans           &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &pipe_backslash  &trans                                      &trans  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &trans             &trans
+&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &trans  &trans  &trans      &trans  &trans  &trans  &kp POUND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &kp GRAVE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                      &trans      &trans                  &at_caret     &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE   &trans
+&trans  &trans           &trans         &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                &trans                &trans                 &trans         &trans             &trans
             >;
         };
 
@@ -213,11 +213,11 @@
 
         mod {
             bindings = <
-&none  &none   &none   &none    &none    &none    &none                                          &none       &none  &none            &none         &none         &none                 &none
-&none  &none   &kp F7  &kp F8   &kp F9   &kp F10    &none                                        &none       &none  &bt BT_SEL 0     &bt BT_SEL 1  &none         &none                 &none
-&none  &none   &kp F4  &kp F5   &kp F6   &kp F11    &none  &none   &none           &none  &none  &none       &none  &kp LEFT_GUI     &kp LEFT_ALT  &none         &rgb_ug RGB_MEFS_CMD  &none
-&none  &none   &none   &kp F1   &kp F2   &kp F3                    &kp F12         &none                     &none  &none            &bt BT_SEL 2  &bt BT_SEL 3  &macro_ver            &bootloader
-&none  &none   &none   &none    &none             &none  &kp CAPS  &bt BT_CLR      &none  &none  &bl BL_TOG         &rgb_ug RGB_TOG  &bl BL_INC    &bl BL_DEC    &none                 &none
+&none  &none  &none   &none   &none   &none    &none                                          &none       &none  &none            &none         &none         &none                 &none
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none                                          &none       &none  &bt BT_SEL 0     &bt BT_SEL 1  &none         &none                 &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &none     &none           &none  &none  &none       &none  &kp LEFT_GUI     &kp LEFT_ALT  &none         &rgb_ug RGB_MEFS_CMD  &none
+&none  &none  &none   &kp F1  &kp F2  &kp F3                    &kp F12         &none                     &none  &none            &bt BT_SEL 2  &bt BT_SEL 3  &macro_ver            &bootloader
+&none  &none  &none   &none   &none            &none  &kp CAPS  &bt BT_CLR      &none  &none  &bl BL_TOG         &rgb_ug RGB_TOG  &bl BL_INC    &bl BL_DEC    &none                 &none
             >;
         };
     };
