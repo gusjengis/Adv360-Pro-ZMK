@@ -129,7 +129,7 @@
 
         hash_grave: hash_grave {
             compatible = "zmk,behavior-mod-morph";
-            label = "hash_grave"
+            label = "hash_grave";
             #binding-cells = <0>;
             bindings = <&kp HASH>, <&kp GRAVE>;
 
