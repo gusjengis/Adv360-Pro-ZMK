@@ -168,6 +168,22 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESC>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <0>;
+            timeout-ms = <0>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <24 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
