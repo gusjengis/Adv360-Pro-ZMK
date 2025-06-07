@@ -194,23 +194,15 @@
         };
 
         LeftShift {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mo 3>;
             key-positions = <30 31>;
+            timeout-ms = <15>;
         };
 
         RightShift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <42 43>;
-        };
-
-        Backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <56 57>;
-        };
-
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <48 49>;
+            timeout-ms = <15>;
         };
     };
 
@@ -219,11 +211,11 @@
 
         programmers_dvorak {
             bindings = <
-&none  &none       &none     &none             &none           &none  &none                                                    &none          &none  &none           &none             &none     &none       &none
-&none  &none       &none     &kp L             &kp P           &kp Y  &none                                                    &none          &kp F  &kp G           &kp C             &kp R     &none       &none
-&none  &hm LALT A  &hmo 3 O  &hm LEFT_SHIFT E  &hm LEFT_GUI U  &kp I  &none      &none        &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_SHIFT T  &hmo 4 N  &hm LALT S  &none
-&none  &none       &kp Q     &kp J             &kp K           &kp X                          &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W             &kp V     &kp Z       &none
-&none  &none       &none     &none             &none                  &kp SPACE  &lt 2 ENTER  &none          &none      &mo 1  &kp BACKSPACE         &none           &none             &none     &none       &none
+&none  &none       &none     &none             &none           &none  &none                                                                          &none          &none  &none           &none             &none     &none       &none
+&none  &none       &none     &kp L             &kp P           &kp Y  &none                                                                          &none          &kp F  &kp G           &kp C             &kp R     &none       &none
+&none  &hm LALT A  &hmo 3 O  &hm LEFT_SHIFT E  &hm LEFT_GUI U  &kp I  &none      &kp LEFT_SHIFT  &none               &none           &kp LEFT_SHIFT  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_SHIFT T  &hmo 4 N  &hm LALT S  &none
+&none  &none       &kp Q     &kp J             &kp K           &kp X                             &kp LCTRL           &kp RCTRL                                      &kp B  &kp M           &kp W             &kp V     &kp Z       &none
+&none  &none       &none     &none             &none                  &kp SPACE  &lt 2 ENTER     &kp LEFT_SHIFT      &kp LEFT_SHIFT  &mo 1           &kp BACKSPACE         &none           &none             &none     &none       &none
             >;
         };
 
