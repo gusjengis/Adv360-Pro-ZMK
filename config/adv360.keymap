@@ -219,11 +219,11 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans     &trans        &trans        &trans      &trans                                      &trans  &trans    &trans     &trans        &trans         &trans   &trans
-&trans  &trans  &trans     &trans        &trans        &trans      &trans                                      &trans  &trans    &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans   &trans
-&trans  &trans  &trans     &kp LEFT_ALT  &kp LEFT_WIN  &trans      &trans  &trans  &trans      &trans  &trans  &trans  &kp HOME  &kp LEFT   &kp DOWN      &kp RIGHT      &kp END  &trans
-&trans  &trans  &kp LC(X)  &kp LC(C)     &kp LC(V)     &kp DELETE                  &trans      &trans                  &trans    &trans     &trans        &trans         &trans   &trans
-&trans  &trans  &trans     &trans        &trans                    &trans  &trans  &trans      &trans  &trans  &trans            &trans     &trans        &trans         &trans   &trans
+&trans  &trans        &trans     &trans          &trans        &trans      &trans                                      &trans  &trans    &trans     &trans        &trans         &trans   &trans
+&trans  &trans        &trans     &trans          &trans        &trans      &trans                                      &trans  &trans    &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans   &trans
+&trans  &kp LEFT_ALT  &trans     &kp LEFT_SHIFT  &kp LEFT_WIN  &trans      &trans  &trans  &trans      &trans  &trans  &trans  &kp HOME  &kp LEFT   &kp DOWN      &kp RIGHT      &kp END  &trans
+&trans  &trans        &kp LC(X)  &kp LC(C)       &kp LC(V)     &kp DELETE                  &trans      &trans                  &trans    &trans     &trans        &trans         &trans   &trans
+&trans  &trans        &trans     &trans          &trans                    &trans  &trans  &trans      &trans  &trans  &trans            &trans     &trans        &trans         &trans   &trans
             >;
         };
 
@@ -239,11 +239,11 @@
 
         mod {
             bindings = <
-&none  &none  &none   &none   &none   &none    &none                                          &none       &none       &none            &none         &none         &none                 &none
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none                                          &none       &bl BL_INC  &bt BT_SEL 0     &bt BT_SEL 1  &none         &none                 &none
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &none     &none           &none  &none  &none       &bl BL_DEC  &kp LEFT_GUI     &kp LEFT_ALT  &none         &rgb_ug RGB_MEFS_CMD  &none
-&none  &none  &none   &kp F1  &kp F2  &kp F3                    &kp F12         &none                     &none       &none            &bt BT_SEL 2  &bt BT_SEL 3  &macro_ver            &bootloader
-&none  &none  &none   &none   &none            &none  &kp CAPS  &bt BT_CLR      &none  &none  &bl BL_TOG              &rgb_ug RGB_TOG  &none         &none         &none                 &none
+&none  &none  &none   &none   &none   &none    &none                                          &none       &none       &none            &none         &none         &none         &none
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none                                          &none       &bl BL_INC  &bt BT_SEL 0     &bt BT_SEL 1  &none         &none         &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &none     &none           &none  &none  &none       &bl BL_DEC  &kp LEFT_GUI     &kp LSHIFT    &none         &kp LEFT_ALT  &none
+&none  &none  &none   &kp F1  &kp F2  &kp F3                    &kp F12         &none                     &none       &none            &bt BT_SEL 2  &bt BT_SEL 3  &macro_ver    &bootloader
+&none  &none  &none   &none   &none            &none  &kp CAPS  &bt BT_CLR      &none  &none  &bl BL_TOG              &rgb_ug RGB_TOG  &none         &none         &none         &none
             >;
         };
     };
