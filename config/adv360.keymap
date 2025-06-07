@@ -174,13 +174,13 @@
         Escape {
             bindings = <&kp ESC>;
             key-positions = <16 17>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <0>;
+            timeout-ms = <10>;
         };
 
         Tab {
             bindings = <&kp TAB>;
             key-positions = <24 25>;
+            timeout-ms = <10>;
         };
     };
 
