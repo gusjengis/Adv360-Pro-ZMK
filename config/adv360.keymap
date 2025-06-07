@@ -209,11 +209,11 @@
 
         symbol {
             bindings = <
-&trans  &trans           &trans         &trans            &trans             &trans           &trans                                      &trans  &trans        &trans                &trans                 &trans         &trans             &trans
-&trans  &trans           &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &pipe_backslash  &trans                                      &trans  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &trans             &trans
-&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &trans  &trans  &trans      &trans  &trans  &trans  &kp POUND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
-&trans  &kp GRAVE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                      &trans      &trans                  &at_caret     &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE   &trans
-&trans  &trans           &trans         &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                &trans                &trans                 &trans         &trans             &trans
+&trans  &trans           &trans         &trans            &trans             &trans           &trans                                      &trans  &trans        &trans                &trans                            &trans         &trans             &trans
+&trans  &trans           &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &pipe_backslash  &trans                                      &trans  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE                   &kp DOLLAR     &trans             &trans
+&trans  &kp EXCLAMATION  &kp ASTERISK   &hm LSHIFT SLASH  &kp EQUAL          &kp AMPERSAND    &trans  &trans  &trans      &trans  &trans  &trans  &kp POUND     &kp LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &kp GRAVE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                      &trans      &trans                  &at_caret     &kp COLON             &kp COMMA                         &kp PERIOD     &kp SINGLE_QUOTE   &trans
+&trans  &trans           &trans         &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                &trans                &trans                            &trans         &trans             &trans
             >;
         };
 
