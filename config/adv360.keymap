@@ -163,7 +163,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <80>;
+            require-prior-idle-ms = <100>;
         };
 
         hmo: hold_momentary {
@@ -236,11 +236,11 @@
 
         alpha {
             bindings = <
-&none  &none  &none     &none           &none           &none  &none                                                         &none          &none  &none           &none           &none     &none  &none
-&none  &none  &none     &kp L           &kp P           &kp Y  &none                                                         &none          &kp F  &kp G           &kp C           &kp R     &none  &none
-&none  &kp A  &hmo 3 O  &hm LEFT_ALT E  &hm LEFT_GUI U  &kp I  &none        &none           &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_ALT T  &hmo 4 N  &kp S  &none
-&none  &none  &kp Q     &kp J           &kp K           &kp X                               &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W           &kp V     &kp Z  &none
-&none  &none  &none     &none           &none                  &lt 2 SPACE  &kp LEFT_SHIFT  &none          &none      &mo 1  &kp BACKSPACE         &none           &none           &none     &none  &none
+&none  &none           &none     &none             &none           &none  &none                                              &none          &none  &none           &none             &none     &none           &none
+&none  &none           &none     &kp L             &kp P           &kp Y  &none                                              &none          &kp F  &kp G           &kp C             &kp R     &none           &none
+&none  &hm LEFT_ALT A  &hmo 3 O  &hm LEFT_SHIFT E  &hm LEFT_GUI U  &kp I  &none      &none  &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_SHIFT T  &hmo 4 N  &hm LEFT_ALT S  &none
+&none  &none           &kp Q     &kp J             &kp K           &kp X                    &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W             &kp V     &kp Z           &none
+&none  &none           &none     &none             &none                  &kp SPACE  &mo 2  &none          &none      &mo 1  &kp BACKSPACE         &none           &none             &none     &none           &none
             >;
         };
 
