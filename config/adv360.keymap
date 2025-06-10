@@ -162,6 +162,8 @@
             quick_tap_ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <80>;
         };
 
         hmo: hold_momentary {
@@ -194,7 +196,7 @@
         };
 
         CapsWord {
-            bindings = <&caps_word>;
+            bindings = <&kp ENTER>;
             key-positions = <42 43>;
             timeout-ms = <15>;
             layers = <0>;
@@ -232,13 +234,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        programmers_dvorak {
+        alpha {
             bindings = <
-&none  &none       &none     &none             &none           &none  &none                                                    &none          &none  &none           &none             &none     &none       &none
-&none  &none       &none     &kp L             &kp P           &kp Y  &none                                                    &none          &kp F  &kp G           &kp C             &kp R     &none       &none
-&none  &hm LALT A  &hmo 3 O  &hm LEFT_SHIFT E  &hm LEFT_GUI U  &kp I  &none      &none        &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_SHIFT T  &hmo 4 N  &hm LALT S  &none
-&none  &none       &kp Q     &kp J             &kp K           &kp X                          &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W             &kp V     &kp Z       &none
-&none  &none       &none     &none             &none                  &kp SPACE  &lt 2 ENTER  &none          &none      &mo 1  &kp BACKSPACE         &none           &none             &none     &none       &none
+&none  &none  &none     &none           &none           &none  &none                                                         &none          &none  &none           &none           &none     &none  &none
+&none  &none  &none     &kp L           &kp P           &kp Y  &none                                                         &none          &kp F  &kp G           &kp C           &kp R     &none  &none
+&none  &kp A  &hmo 3 O  &hm LEFT_ALT E  &hm LEFT_GUI U  &kp I  &none        &none           &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_ALT T  &hmo 4 N  &kp S  &none
+&none  &none  &kp Q     &kp J           &kp K           &kp X                               &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W           &kp V     &kp Z  &none
+&none  &none  &none     &none           &none                  &lt 2 SPACE  &kp LEFT_SHIFT  &none          &none      &mo 1  &kp BACKSPACE         &none           &none           &none     &none  &none
             >;
         };
 
@@ -252,7 +254,7 @@
             >;
         };
 
-        navigation {
+        nav {
             bindings = <
 &trans  &trans        &trans     &trans          &trans        &trans      &trans                                      &trans  &trans    &trans     &trans        &trans         &trans   &trans
 &trans  &trans        &trans     &kp LA(F4)      &trans        &trans      &trans                                      &trans  &trans    &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans   &trans
@@ -264,11 +266,11 @@
 
         keypad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans        &trans  &trans        &trans        &trans        &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans        &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                        &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp NUMBER_0          &trans        &trans        &trans        &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans        &trans        &trans        &trans        &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans        &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                        &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp NUMBER_0                &trans        &trans        &trans        &trans     &trans
             >;
         };
 
