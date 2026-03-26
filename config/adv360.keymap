@@ -254,21 +254,21 @@
 
         alpha {
             bindings = <
-&none  &none           &none     &none             &none           &none  &none                                                         &none          &none  &none           &none             &none     &none           &none
-&none  &none           &none     &kp L             &kp P           &kp Y  &none                                                         &none          &kp F  &kp G           &kp C             &kp R     &none           &none
-&none  &hm LEFT_ALT A  &hmo 4 O  &hm LEFT_SHIFT E  &hm LEFT_GUI U  &kp I  &none                 &none  &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_SHIFT T  &hmo 5 N  &hm LEFT_ALT S  &none
-&none  &none           &kp Q     &kp J             &kp K           &kp X                               &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W             &kp V     &kp Z           &none
-&none  &none           &none     &none             &none                  &hm LEFT_SHIFT SPACE  &mo 3  &none          &none      &mo 2  &kp BACKSPACE         &none           &none             &none     &none           &none
+&none      &none           &none     &none             &none           &none  &none                                                    &none          &none  &none           &none             &none     &none           &none
+&none      &none           &none     &kp L             &kp P           &kp Y  &none                                                    &none          &kp F  &kp G           &kp C             &kp R     &none           &none
+&none      &hm LEFT_ALT A  &hmo 4 O  &hm LEFT_SHIFT E  &hm LEFT_GUI U  &kp I  &none  &none            &none          &none      &none  &none          &kp D  &hm LEFT_GUI H  &hm LEFT_SHIFT T  &hmo 5 N  &hm LEFT_ALT S  &none
+&kp LCTRL  &none           &kp Q     &kp J             &kp K           &kp X                          &kp LCTRL      &kp RCTRL                        &kp B  &kp M           &kp W             &kp V     &kp Z           &kp LCTRL
+&none      &none           &none     &none             &none                  &mo 3  &hm LSHFT SPACE  &none          &none      &mo 2  &kp BACKSPACE         &none           &none             &none     &none           &none
             >;
         };
 
         gaming {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans     &trans      &trans         &trans
-&trans  &trans  &kp W   &kp E   &kp R   &kp T   &trans                                                    &trans  &kp Y   &kp U   &kp I      &kp O       &trans         &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans     &trans          &trans         &trans  &trans  &trans  &kp H   &kp J   &kp K      &hmo 5 L    &kp SEMICOLON  &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                              &kp LCTRL      &trans                  &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp LEFT_SHIFT  &trans         &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans     &trans      &trans         &trans
+&trans  &trans      &kp Q   &kp W   &kp E   &kp R   &trans                                            &trans  &kp Y   &kp U   &kp I      &kp O       &trans         &trans
+&trans  &kp LSHIFT  &kp A   &kp S   &kp D   &kp F   &trans     &trans     &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &hmo 5 L    &kp SEMICOLON  &trans
+&kp G   &kp B       &kp Z   &kp X   &kp C   &kp V                         &kp T       &trans                  &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp APOS
+&trans  &trans      &trans  &trans  &trans          &kp LCTRL  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans     &trans      &trans         &trans
             >;
         };
 
