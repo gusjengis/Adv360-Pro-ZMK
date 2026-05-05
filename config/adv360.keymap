@@ -247,6 +247,13 @@
             key-positions = <16 19>;
             layers = <5>;
         };
+
+        dictate {
+            bindings = <&kp F24>;
+            key-positions = <48 49>;
+            timeout-ms = <15>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
